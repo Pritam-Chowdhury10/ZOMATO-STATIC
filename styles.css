@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.herosection {
+    background-image:url(source/heroSectionBackground.png);
+    min-height: 60vh;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 16px 48px;
+} 
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navright{
+    display: flex;
+    gap:40px;
+}
+#lineicon{
+    color: saddlebrown;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border: solid 2px white;
+    display: none;
+}
+
+.Photoandsearch{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: calc(60vh - 60px);
+}
+
+.zomatoimage{
+    width: 600px;
+    height: auto;
+} 
+
+ .caption{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 30px ;
+ }
+ .search{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    border-radius: 100px;
+    width: 50%;
+ }
+.gaponly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.onlyloc,
+.onlysearch{
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.onlyloc{
+    width:35%;
+    border-right: 2px solid grey;
+}
+.onlysearch{
+    width: 100%;
+}
+
+.cards{
+    margin: 3rem auto;
+    /* width: 90vw; */
+    /* height: 30vh; */
+    /* display: flex; */
+    /* flex-wrap:wrap; */
+}
+ .cards{
+ display: flex;
+ flex-wrap: wrap;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+}
+
+#onlycards{
+    border-radius: 10%;
+    overflow: hidden;
+    border: 1px solid grey;
+    background-color: blanchedalmond;
+    border: none;
+    transition: all 0.5s ease-out;
+}
+#onlycards:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+}
+
+.cardpic{
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 20px;
+}
+.onehead{
+    padding-top: 20px;
+    font-size: 40px;
+    margin-right: 4rem;
+}
+
+
+.collections h1{
+    font-weight: 600;
+}
+
+.heading{
+    /* padding: 20px; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 3rem;
+}
+
+.heading span:nth-child(2){
+    color: crimson;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.collections_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card1, .card2,.card3,.card4{
+    height: 400px;
+    width:250px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid slategrey;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.4s ease-out;
+
+}
+.card1:hover, .card2:hover,.card3:hover,.card4:hover{
+    transform: rotate(30deg);
+    background-position: center right;
+}
+.card1{
+    background-image: url(source/collection1.jpg);
+}
+
+.card2{
+    background-image: url(source/collection2.jpg);
+}
+
+.card3{
+    background-image: url(source/collection3.jpg);
+}
+
+.card4{
+    background-image: url(source/collection4.jpg);
+}
+.collections_content{
+    color: white;
+}
+.close{
+    padding: 0px 50px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 10px;
+}
+    
+.collections_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+.collections_content h4{
+    /* font-weight: 400; */
+    letter-spacing: 0.5px;
+    
+}
+
+.collections_content span{
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+@media only screen and (max-width: 600px) {
+    .herosection{
+        width: 135vw;
+    }
+    #onlycards{
+        flex-wrap: wrap;
+    }
+    .heading{
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+    }
+    .navbar {
+        padding: 12px 24px;
+    }
+
+    .navlink{
+        gap: 20px;
+        display: none;
+    }
+
+    #lineicon {
+        display: flex;
+    }
+
+    .Photoandsearch {
+        height: auto;
+        padding: 20px;
+    }
+
+    .zomatoimage {
+        width: 80%;
+    }
+
+    .caption {
+        font-size: 24px;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .onlyloc {
+        width: 30%;
+    }
+
+    .cards {
+        width: 95vw;
+    }
+
+    .cards .onlycards {
+        border-radius: 8%;
+    }
+
+    .heading {
+        gap: 1rem;
+        font-size: 18px;
+    }
+
+    .heading span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .collections_card {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        height: 300px;
+        min-width: 200px;
+    }
+    .classbanner{
+        height: auto;
+        width: auto;
+    }
+    .apppic img{
+        height: 50px;
+
+    }
+    
+    }
+   
+
+
+
+    .classbanner{
+        min-height: 50vh;
+        background-color: snow;
+        background-size: cover;
+        margin-top: 1.5rem;
+    }
+    .downloadphone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .leftonly{
+        height: 55vh;
+        width: auto;
+        padding-top: 1.5rem;
+    }
+    .righttype{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .zomatotype{
+        font-size: 35px;
+    }
+    .righttype p{
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0px 0px 10px 0px;
+    }
+    .radio{
+        width: 50%;
+        display: flex;
+        gap: 10px;
+        accent-color: red;
+    }
+
+    .emailandbtn input{
+        padding: 10px 0px 10px 10px;
+        width:  18rem;
+        border-radius: 10px 10px 10px 10px;
+        border: 2px solid gray;
+        outline: none;
+    }
+
+    .emailandbtn button{
+        border-radius: 10px;
+        border: 2 solid gray;
+        padding: 10px;
+    }
+    .apppic img{
+        padding-top: 10px;
+        display: flex;
+        /* width: 10vw; */
+    }
+
+    .footer{
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .sectionleft{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    .sectionleft img{
+        width: 130px;
+    }
+    .sectionright{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .sectionright button{
+         display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding:5px 20px 0px 5px;    
+        border: 1px solid gray;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .sectionright img{
+        width: 19px;
+    }
+
+    .footertopics{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 80%;
+        padding-top: 2rem;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .footertags{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footertags h5{
+        font-weight: 700;
+        font-size: 15px;
+         margin-bottom: 5px;
+         letter-spacing: 0.8px;
+    }
+    .footerlink{
+        color: gray;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .footerlink:hover{
+        color: black;
+    }
+    .socialtags{
+        display: flex;
+        gap: 0.8rem;
+    }
+
+.socialtags button{
+    padding: 3px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.socialtags button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerstore{
+    width: 80%;
+    margin-bottom: 15px;
+}
+.disclamer{
+    color: gray;
+    width: 90%;    
+    margin: auto;
+    
+}
+.imgspace{
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+    .footertopics{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
